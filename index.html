@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <meta
+      name="description"
+      content="Here We Create The Spotify Clone Using HTML and CSS"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option">
+            <i class="fa-brands fa-spotify"></i>
+            <a href="#">Spotify</a>
+          </div>
+          <div class="nav-option nav-option1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option nav-option1 nav-option-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option nav-option1 nav-option-search">
+              <img src="./assets/library_icon.png" alt="" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icon">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="library-box">
+            <div class="lib-box">
+              <p class="box-p1">Create yout first playlist</p>
+              <p class="box-p2">it's easy, we'll help you</p>
+              <a href="#"><button class="badge">Create playlist</button></a>
+            </div>
+            <div class="lib-box">
+              <p class="box-p1">Let's Find the Podcasts to follow</p>
+              <p class="box-p2">we'll keep you updated on new episode</p>
+              <a href="#"><button class="badge">Browse podcasts</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content-nav">
+          <div class="main-content-nav-option">
+            <!-- <i class="fa-solid fa-caret-left"></i>
+            <i class="fa-solid fa-caret-right"></i> -->
+            <img src="./assets/backward_icon.png" alt="forward_icon" />
+            <img src="./assets/forward_icon.png" alt="backford" class="hide" />
+          </div>
+          <div class="main-content-nav-login">
+            <a href="#">Sign up</a>
+            <button class="badge-main">Login In</button>
+          </div>
+        </div>
+        <!-- <div class="main-content-card"></div> -->
+        <div class="artists-container">
+          <div class="artists-container-nav">
+            <h2 class="h2">Popular Artists</h2>
+            <p class="p">Show all</p>
+          </div>
+          <div class="artists-container-all-img">
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/Pritam.jpeg" alt="" />
+                <p>Pritam</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/arrahaman.jpeg" alt="" />
+                <p>A.R.Rahaman</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/Pritam.jpeg" alt="" />
+                <p>Pritam</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/arrahaman.jpeg" alt="" />
+                <p>A.R.Rahaman</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/Pritam.jpeg" alt="" />
+                <p>Pritam</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/arrahaman.jpeg" alt="" />
+                <p>A.R.Rahaman</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+
+            <div class="artists-hover-effect">
+              <div class="artists-container-img">
+                <img src="./assets/Pritam.jpeg" alt="" />
+                <p>Pritam</p>
+                <p id="tag">Artists</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-content-all-card">
+            <h2>Featured Charts</h2>
+            <div class="main-content-flex-card">
+              <div class="main-content-card">
+                <img src="./assets/card1img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card2img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card3img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card4img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card5img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <div class="main-content-card">
+                <img src="./assets/card6img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+            </div>
+            <h2>Spotify Playlist</h2>
+
+            <div class="main-content-flex-card">
+              <div class="main-content-card">
+                <img src="./assets/card1img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card2img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card3img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card4img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card5img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <div class="main-content-card">
+                <img src="./assets/card6img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+            </div>
+            <h2>Trending Episode</h2>
+
+            <div class="main-content-flex-card">
+              <div class="main-content-card">
+                <img src="./assets/card1img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card2img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card3img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card4img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <!-- <h2>Featured Charts</h2> -->
+              <div class="main-content-card">
+                <img src="./assets/card5img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+              <div class="main-content-card">
+                <img src="./assets/card6img.jpeg" alt="" />
+                <p class="firstpara">Top Songs -...</p>
+                <p class="secondpara">
+                  Your weekly updates of the most Player...
+                </p>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="footer-all-text">
+                <p id="footer-first-para">Company</p>
+                <p class="secondpara">About</p>
+                <p class="secondpara">Jobs</p>
+                <p class="secondpara">For the Record</p>
+              </div>
+              <div class="footer-all-text">
+                <p id="footer-first-para">Communities</p>
+                <p class="secondpara">For Artists</p>
+                <p class="secondpara">Developers</p>
+                <p class="secondpara">Advertising</p>
+                <p class="secondpara">Investors</p>
+                <p class="secondpara">Vendors</p>
+              </div>
+              <div class="footer-all-text">
+                <p id="footer-first-para">Useful links</p>
+                <p class="secondpara">Support</p>
+                <p class="secondpara">Free Mobile App</p>
+              </div>
+              <div class="footer-all-text">
+                <p id="footer-first-para">Spotify Plans</p>
+                <p class="secondpara">Premium Individual</p>
+                <p class="secondpara">Premium Duo</p>
+                <p class="secondpara">Premium Family</p>
+                <p class="secondpara">Premium Student</p>
+                <p class="secondpara">Spotify Free</p>
+              </div>
+              <div class="footer-icon">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="left-side">
+          <img src="./assets/card4img.jpeg" alt="" />
+          <div class="textpara">
+            <p class="music-firstpara">Day Lights</p>
+            <p class="music-secondpara">Chirag Zanpadiya</p>
+          </div>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div class="middle-side">
+          <div class="player-control"  >
+          <img src="./assets/player_icon1.png" alt="" class="player-control-icon" />
+          <img src="./assets/player_icon2.png" alt="" />
+          <img src="./assets/player_icon3.png" alt="" id="main-icon" style="opacity: 1;" />
+          <img src="./assets/player_icon4.png" alt="" />
+          <img src="./assets/player_icon5.png" alt="" />
+      
+        </div>
+        <div id="playback">
+          <span>00:00</span>
+          <input type="range" min="0" max="100" step="1">
+          <span>3:42</span>
+        </div>
+      </div>
+      <div class="right-side">
+
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-database"></i>
+        <i class="fa-solid fa-headphones-simple"></i>
+        <i class="fa-solid fa-music"></i>
+      </div>
+      </div>
+      
+      
+    
+    </div>
+  </body>
+</html>
